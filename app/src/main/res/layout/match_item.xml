@@ -18,8 +18,7 @@
             android:layout_marginTop="@dimen/margin_default"
             android:contentDescription="@string/cd_home_team"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@tools:sample/avatars[0]" />
+            app:layout_constraintTop_toTopOf="parent" />
 
         <com.google.android.material.textview.MaterialTextView
             android:id="@+id/tvHomeTeamName"
@@ -57,15 +56,14 @@
             app:layout_constraintTop_toTopOf="@id/ivHomeTeam" />
 
         <androidx.appcompat.widget.AppCompatImageView
-            android:id="@+id/tvAwayTeam"
+            android:id="@+id/ivAwayTeam"
             android:layout_width="@dimen/team_image_size"
             android:layout_height="@dimen/team_image_size"
             android:layout_marginTop="@dimen/margin_default"
             android:layout_marginEnd="@dimen/margin_default"
             android:contentDescription="@string/cd_away_team"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@tools:sample/avatars[1]" />
+            app:layout_constraintTop_toTopOf="parent" />
 
         <com.google.android.material.textview.MaterialTextView
             android:id="@+id/tvAwayTeamName"
@@ -74,9 +72,9 @@
             android:layout_marginTop="@dimen/margin_default"
             android:layout_marginBottom="@dimen/margin_default"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="@id/tvAwayTeam"
-            app:layout_constraintStart_toStartOf="@id/tvAwayTeam"
-            app:layout_constraintTop_toBottomOf="@id/tvAwayTeam"
+            app:layout_constraintEnd_toEndOf="@id/ivAwayTeam"
+            app:layout_constraintStart_toStartOf="@id/ivAwayTeam"
+            app:layout_constraintTop_toBottomOf="@id/ivAwayTeam"
             tools:text="Away Team" />
 
         <com.google.android.material.textview.MaterialTextView
@@ -86,10 +84,10 @@
             android:layout_marginStart="@dimen/margin_default"
             android:layout_marginEnd="@dimen/margin_default"
             android:textAppearance="@style/TextAppearance.AppCompat.Large"
-            app:layout_constraintBottom_toBottomOf="@id/tvAwayTeam"
-            app:layout_constraintEnd_toStartOf="@id/tvAwayTeam"
+            app:layout_constraintBottom_toBottomOf="@id/ivAwayTeam"
+            app:layout_constraintEnd_toStartOf="@id/ivAwayTeam"
             app:layout_constraintStart_toEndOf="@id/tvVersos"
-            app:layout_constraintTop_toTopOf="@id/tvAwayTeam"
+            app:layout_constraintTop_toTopOf="@id/ivAwayTeam"
             tools:text="99" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
